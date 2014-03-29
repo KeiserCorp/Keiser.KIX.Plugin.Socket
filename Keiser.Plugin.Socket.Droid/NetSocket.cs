@@ -112,7 +112,8 @@ namespace Keiser.Plugin.Socket
             {
                 _keepRunning = false;
             }
-            _socket.Close();
+            if(_socket != null)
+                _socket.Close();
 
             return true;
         }
