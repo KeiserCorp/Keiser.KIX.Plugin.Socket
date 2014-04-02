@@ -67,14 +67,21 @@ namespace Keiser.Plugin.Socket
         {
             lock (Locker)
             {
-                _socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-                IPEndPoint ipEndPoint = new IPEndPoint(IPAddress.Any, _port);
-                _socket.Bind(ipEndPoint);
-                IPAddress ipAddress = IPAddress.Parse(_ipAddress);
-                MulticastOption multicastOption = new MulticastOption(ipAddress);
-                _socket.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.MulticastTimeToLive, 2);
-                _socket.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.AddMembership, multicastOption);
-                _endPointSender = new IPEndPoint(IPAddress.Any, 0);
+                try
+                {
+                    _socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+                    IPEndPoint ipEndPoint = new IPEndPoint(IPAddress.Any, _port);
+                    _socket.Bind(ipEndPoint);
+                    IPAddress ipAddress = IPAddress.Parse(_ipAddress);
+                    MulticastOption multicastOption = new MulticastOption(ipAddress);
+                    _socket.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.MulticastTimeToLive, 2);
+                    _socket.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.AddMembership, multicastOption);
+                    _endPointSender = new IPEndPoint(IPAddress.Any, 0);
+                }
+                catch (Exception e)
+                {
+                    Trace.Error("Socket Creation Exception", e);
+                }
             }
         }
 
@@ -82,9 +89,16 @@ namespace Keiser.Plugin.Socket
         {
             lock (Locker)
             {
-                _socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-                _socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.Broadcast, 1);
-                _endPointSender = new IPEndPoint(IPAddress.Parse(_ipAddress), _port);
+                try
+                {
+                    _socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+                    _socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.Broadcast, 1);
+                    _endPointSender = new IPEndPoint(IPAddress.Parse(_ipAddress), _port);
+                }
+                catch (Exception e)
+                {
+                    Trace.Error("Socket Creation Exception", e);
+                }
             }
         }
 
@@ -112,7 +126,7 @@ namespace Keiser.Plugin.Socket
             {
                 _keepRunning = false;
             }
-            if(_socket != null)
+            if (_socket != null)
                 _socket.Close();
 
             return true;
