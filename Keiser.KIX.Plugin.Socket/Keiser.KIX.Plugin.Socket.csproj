@@ -8,8 +8,8 @@
     <ProjectGuid>{AD4EAC27-DE7E-4B2A-B24E-63608D12F2BF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Keiser.Plugin.Socket</RootNamespace>
-    <AssemblyName>Keiser.Plugin.Socket</AssemblyName>
+    <RootNamespace>Keiser.KIX.Plugin.Socket</RootNamespace>
+    <AssemblyName>Keiser.KIX.Plugin.Socket</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile158</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>

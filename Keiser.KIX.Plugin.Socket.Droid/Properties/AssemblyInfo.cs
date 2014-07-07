@@ -6,11 +6,11 @@ using Android.App;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Keiser.Plugin.Socket.Droid")]
+[assembly: AssemblyTitle("Keiser.KIX.Plugin.Socket.Droid")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Keiser.Plugin.Socket.Droid")]
+[assembly: AssemblyProduct("Keiser.KIX.Plugin.Socket.Droid")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

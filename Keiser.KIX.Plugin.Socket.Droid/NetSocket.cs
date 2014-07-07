@@ -1,4 +1,4 @@
-namespace Keiser.Plugin.Socket
+namespace Keiser.KIX.Plugin.Socket
 {
     using System;
     using System.Net;

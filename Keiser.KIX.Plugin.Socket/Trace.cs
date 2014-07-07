@@ -1,4 +1,4 @@
-﻿namespace Keiser.Plugin.Socket
+﻿namespace Keiser.KIX.Plugin.Socket
 {
     using Cirrious.CrossCore.Platform;
 
