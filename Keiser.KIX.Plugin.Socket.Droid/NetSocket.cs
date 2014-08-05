@@ -6,24 +6,21 @@ namespace Keiser.KIX.Plugin.Socket
 
     public class NetSocket : ISocket
     {
-        public object Locker { get; set; }
-        private Socket _socket;
-        private EndPoint _endPointSender;
-        private AsyncCallback _callback;
-        private string _ipAddress;
-        private int _port;
+        protected object _locker = new object();
+        public object Locker { get { return _locker; } }
 
-        private byte[] _resultBuffer;
-        private byte[] _receiverBuffer = new byte[1024];
+        protected Socket _socket;
+        protected EndPoint _endPointSender;
+        protected AsyncCallback _callback;
 
-        private bool _keepRunning;
-        private object _runningLocker = new object();
+        protected string _ipAddress;
+        protected int _port;
 
+        protected byte[] _resultBuffer;
+        protected byte[] _receiverBuffer = new byte[1024];
 
-        public NetSocket()
-        {
-            Locker = new object();
-        }
+        protected bool _keepRunning;
+        protected object _runningLocker = new object();
 
         public virtual void CreateBroadcastSender(string ipAddress, int port)
         {
@@ -56,7 +53,7 @@ namespace Keiser.KIX.Plugin.Socket
                 _ipAddress = ipAddress;
                 _port = port;
             }
-            if (Running())
+            if (Running)
             {
                 StopListener();
                 StartListener(_callback);
@@ -104,17 +101,13 @@ namespace Keiser.KIX.Plugin.Socket
 
         public virtual bool StartListener(AsyncCallback callback = null)
         {
-            if (Running())
+            if (Running)
                 return false;
             CreateListeningSocket();
             lock (Locker)
-            {
                 _callback = callback;
-            }
             lock (_runningLocker)
-            {
                 _keepRunning = true;
-            }
             SocketListen();
 
             return true;
@@ -123,20 +116,19 @@ namespace Keiser.KIX.Plugin.Socket
         public virtual bool StopListener()
         {
             lock (_runningLocker)
-            {
                 _keepRunning = false;
-            }
             if (_socket != null)
                 _socket.Close();
 
             return true;
         }
 
-        public virtual bool Running()
+        public bool Running
         {
-            lock (_runningLocker)
+            get
             {
-                return _keepRunning;
+                lock (_runningLocker)
+                    return _keepRunning;
             }
         }
 
@@ -170,7 +162,7 @@ namespace Keiser.KIX.Plugin.Socket
                 _resultBuffer = new byte[messageLength];
                 Array.Copy(_receiverBuffer, _resultBuffer, messageLength);
             }
-            if (!Running())
+            if (!Running)
                 return;
             SocketListen();
             if (_callback != null && messageLength > 0)

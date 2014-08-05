@@ -4,7 +4,7 @@
 
     public class Trace
     {
-        private const string Tag = "Socket";
+        private const string Tag = "KIX.Socket";
 
         public static void Info(string message, params object[] args)
         {
