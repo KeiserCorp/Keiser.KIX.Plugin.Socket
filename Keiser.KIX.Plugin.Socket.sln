@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keiser.KIX.Plugin.Socket", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keiser.KIX.Plugin.Socket.Droid", "Keiser.KIX.Plugin.Socket.Droid\Keiser.KIX.Plugin.Socket.Droid.csproj", "{9357B5E7-09F5-4F50-85D1-0E4F996F1BB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keiser.KIX.Plugin.iOS", "Keiser.KIX.Plugin.iOS\Keiser.KIX.Plugin.iOS.csproj", "{244BAAD4-A850-429D-A0F5-0EC3650D9DB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keiser.KIX.Plugin.Socket.iOS", "Keiser.KIX.Plugin.Socket.iOS\Keiser.KIX.Plugin.Socket.iOS.csproj", "{244BAAD4-A850-429D-A0F5-0EC3650D9DB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
