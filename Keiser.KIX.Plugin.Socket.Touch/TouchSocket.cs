@@ -1,4 +1,4 @@
-namespace Keiser.KIX.Plugin.Socket.iOS
+namespace Keiser.KIX.Plugin.Socket.Touch
 {
     public class TouchSocket : NetSocket
     {
