@@ -8,7 +8,7 @@ Current Platform Support:
 * Android (API Level 14)
 * iOS (Classic)
 
-#Install & Use
+## Install & Use
 * NuGet: https://www.nuget.org/packages/Keiser.MvxPlugins.Sockets/
 
 ## TODO
