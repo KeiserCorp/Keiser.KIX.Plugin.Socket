@@ -1,8 +1,19 @@
-Keiser.KIX.Plugin.Socket
+Mvx Sockets Plugin for MvvmCross
 ========================
-MvvMCross plugin which adds Socket support to cross-platform projects.
 
-**Project Status:**
-* Project file has structure for including support on all Xamarin targetable platforms
-* Currently only supports UDP sockets on Android
-* Pull requests to add support for other platforms are welcome
+## Project
+MvvmCross plugin which adds Socket support to cross-platform projects.
+
+Current Platform Support:
+* Android (API Level 14)
+* iOS (Classic)
+
+## Use
+Manual Install from DLLs
+* Add Keiser.Mvx.Plugins.Sockets.dll to all projects
+* Add Keiser.Mvx.Plugins.Sockets.ClientName.dll to all clients 
+
+## TODO
+* Add support for Windows Store and Windows Phone platforms
+* Modify implementation to match System.Net.Socket interfaces
+* Expand to full socket implementation (currently only UDP components)
