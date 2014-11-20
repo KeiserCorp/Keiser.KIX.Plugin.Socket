@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>Keiser.Mvx.Plugins.Sockets</id>
+		<version>1.0.0</version>
+		<title>Keiser.Mvx.Plugins.Sockets</title>
+		<authors>Keiser Corp.</authors>
+		<owners>Keiser Corp.</owners>
+			<licenseUrl>https://github.com/KeiserCorp/Keiser.Mvx.Plugins.Sockets/blob/master/LICENSE</licenseUrl>
+			<projectUrl>https://github.com/KeiserCorp/Keiser.Mvx.Plugins.Sockets</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>This package contains the 'Sockets' plugin for MvvmCross v3.</description>
+		<copyright>Copyright 2014</copyright>
+		<tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone keiser</tags>
+		<dependencies>
+			<dependency id="MvvmCross.HotTuna.CrossCore" version="3.2.1" />
+		</dependencies>
+	</metadata>
+	<files>
+		<!-- PCL -->
+		<file src="..\Keiser.Mvx.Plugins.Sockets\bin\Release\Keiser.Mvx.Plugins.Sockets.dll" target="lib\portable-net45+win+wp80+MonoAndroid10+MonoTouch10\Keiser.Mvx.Plugins.Sockets.dll" />
+
+		<!-- droid -->
+		<file src="..\Keiser.Mvx.Plugins.Sockets\bin\Release\Keiser.Mvx.Plugins.Sockets.dll" target="lib\MonoAndroid17\Keiser.Mvx.Plugins.Sockets.dll" />
+		<file src="..\Keiser.Mvx.Plugins.Sockets.Droid\bin\Release\Keiser.Mvx.Plugins.Sockets.Droid.dll" target="lib\MonoAndroid17\Keiser.Mvx.Plugins.Sockets.Droid.dll" />
+		<file src="BootstrapContent\SocketsPluginBootstrap.cs.pp" target="content\MonoAndroid17\Bootstrap\SocketsPluginBootstrap.cs.pp" />
+		
+		<!-- touch -->
+		<file src="..\Keiser.Mvx.Plugins.Sockets\bin\Release\Keiser.Mvx.Plugins.Sockets.dll" target="lib\MonoAndroid17\Keiser.Mvx.Plugins.Sockets.dll" />
+		<file src="..\Keiser.Mvx.Plugins.Sockets.Touch\bin\Release\Keiser.Mvx.Plugins.Sockets.Touch.dll" target="lib\MonoAndroid17\Keiser.Mvx.Plugins.Sockets.Touch.dll" />
+		<file src="BootstrapContent\SocketsTouchPluginBootstrap.cs.pp" target="content\MonoTouch40\Bootstrap\SocketsTouchPluginBootstrap.cs.pp" />
+	</files>
+</package>
