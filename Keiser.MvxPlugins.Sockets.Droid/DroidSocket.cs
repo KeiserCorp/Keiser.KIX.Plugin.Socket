@@ -1,4 +1,4 @@
-namespace Keiser.Mvx.Plugins.Sockets.Droid
+namespace Keiser.MvxPlugins.Sockets.Droid
 {
     public class DroidSocket : NetSocket
     {

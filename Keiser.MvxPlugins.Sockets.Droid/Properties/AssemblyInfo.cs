@@ -5,22 +5,15 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Keiser.Mvx.Plugins.Sockets.Touch")]
+[assembly: AssemblyTitle("Keiser.MvxPlugins.Sockets.Droid")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Keiser Corp.")]
-[assembly: AssemblyProduct("Keiser.Mvx.Plugins.Sockets.Touch")]
+[assembly: AssemblyProduct("Keiser.MvxPlugins.Sockets.Droid")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
-
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b2d3d039-f069-453e-92f1-f206f46bcb89")]
 
 // Version information for an assembly consists of the following four values:
 //

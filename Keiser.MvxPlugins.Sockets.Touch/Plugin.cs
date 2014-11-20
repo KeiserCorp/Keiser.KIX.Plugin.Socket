@@ -1,4 +1,4 @@
-﻿namespace Keiser.Mvx.Plugins.Sockets.Droid
+﻿namespace Keiser.MvxPlugins.Sockets.Touch
 {
     using Cirrious.CrossCore;
     using Cirrious.CrossCore.Plugins;
@@ -8,7 +8,7 @@
     {
         public void Load()
         {
-            Mvx.RegisterType<ISocket, DroidSocket>();
+            Mvx.RegisterType<ISocket, TouchSocket>();
         }
     }
 }

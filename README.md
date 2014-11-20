@@ -8,12 +8,16 @@ Current Platform Support:
 * Android (API Level 14)
 * iOS (Classic)
 
-## Use
-Manual Install from DLLs
-* Add Keiser.Mvx.Plugins.Sockets.dll to all projects
-* Add Keiser.Mvx.Plugins.Sockets.ClientName.dll to all clients 
+#Install & Use
+* NuGet: https://www.nuget.org/packages/Keiser.MvxPlugins.Sockets/
 
 ## TODO
 * Add support for Windows Store and Windows Phone platforms
 * Modify implementation to match System.Net.Socket interfaces
 * Expand to full socket implementation (currently only UDP components)
+
+## Contributors
+* [bayssmekanique](https://github.com/bayssmekanique)
+
+## License
+Licensed under [The MIT License (MIT)](http://opensource.org/licenses/MIT)

@@ -1,4 +1,4 @@
-namespace Keiser.Mvx.Plugins.Sockets
+namespace Keiser.MvxPlugins.Sockets
 {
     using System;
     using System.Net;

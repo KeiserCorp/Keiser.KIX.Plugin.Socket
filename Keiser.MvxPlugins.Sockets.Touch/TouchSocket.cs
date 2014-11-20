@@ -1,4 +1,4 @@
-namespace Keiser.Mvx.Plugins.Sockets.Touch
+namespace Keiser.MvxPlugins.Sockets.Touch
 {
     public class TouchSocket : NetSocket
     {

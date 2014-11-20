@@ -1,4 +1,4 @@
-﻿namespace Keiser.Mvx.Plugins.Sockets
+﻿namespace Keiser.MvxPlugins.Sockets
 {
     using Cirrious.CrossCore;
     using Cirrious.CrossCore.Plugins;

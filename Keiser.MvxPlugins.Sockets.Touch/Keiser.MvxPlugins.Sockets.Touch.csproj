@@ -8,9 +8,9 @@
     <ProjectGuid>{244BAAD4-A850-429D-A0F5-0EC3650D9DB3}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Keiser.Mvx.Plugins.Sockets.Touch</RootNamespace>
+    <RootNamespace>Keiser.MvxPlugins.Sockets.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Keiser.Mvx.Plugins.Sockets.Touch</AssemblyName>
+    <AssemblyName>Keiser.MvxPlugins.Sockets.Touch</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,15 +44,14 @@
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.2.1\lib\MonoTouch\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="monotouch" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Keiser.Mvx.Plugins.Sockets\Keiser.Mvx.Plugins.Sockets.csproj">
+    <ProjectReference Include="..\Keiser.MvxPlugins.Sockets\Keiser.MvxPlugins.Sockets.csproj">
       <Project>{ad4eac27-de7e-4b2a-b24e-63608d12f2bf}</Project>
-      <Name>Keiser.Mvx.Plugins.Sockets</Name>
+      <Name>Keiser.MvxPlugins.Sockets</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
