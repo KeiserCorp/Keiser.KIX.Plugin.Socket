@@ -2,7 +2,7 @@
 <package >
 	<metadata>
 		<id>Keiser.MvxPlugins.Sockets</id>
-		<version>1.0.0</version>
+		<version>1.0.4</version>
 		<title>Keiser.MvxPlugins.Sockets</title>
 		<authors>Keiser Corp.</authors>
 		<owners>Keiser Corp.</owners>
@@ -11,7 +11,7 @@
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
 		<description>This package contains the 'Sockets' plugin for MvvmCross v3.</description>
 		<copyright>Copyright 2014</copyright>
-		<tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone keiser</tags>
+		<tags>xamarin mvvmcross mvx keiser socket</tags>
 		<dependencies>
 			<dependency id="MvvmCross.HotTuna.CrossCore" version="3.2.1" />
 		</dependencies>
@@ -21,13 +21,13 @@
 		<file src="..\Keiser.MvxPlugins.Sockets\bin\Release\Keiser.MvxPlugins.Sockets.dll" target="lib\portable-net45+win+wp80+MonoAndroid10+MonoTouch10\Keiser.MvxPlugins.Sockets.dll" />
 
 		<!-- droid -->
-		<file src="..\Keiser.MvxPlugins.Sockets\bin\Release\Keiser.MvxPlugins.Sockets.dll" target="lib\MonoAndroid17\Keiser.MvxPlugins.Sockets.dll" />
-		<file src="..\Keiser.MvxPlugins.Sockets.Droid\bin\Release\Keiser.MvxPlugins.Sockets.Droid.dll" target="lib\MonoAndroid17\Keiser.MvxPlugins.Sockets.Droid.dll" />
-		<file src="BootstrapContent\SocketsPluginBootstrap.cs.pp" target="content\MonoAndroid17\Bootstrap\SocketsPluginBootstrap.cs.pp" />
+		<file src="..\Keiser.MvxPlugins.Sockets\bin\Release\Keiser.MvxPlugins.Sockets.dll" target="lib\MonoAndroid\Keiser.MvxPlugins.Sockets.dll" />
+		<file src="..\Keiser.MvxPlugins.Sockets.Droid\bin\Release\Keiser.MvxPlugins.Sockets.Droid.dll" target="lib\MonoAndroid\Keiser.MvxPlugins.Sockets.Droid.dll" />
+		<file src="BootstrapContent\SocketsPluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\SocketsPluginBootstrap.cs.pp" />
 		
 		<!-- touch -->
-		<file src="..\Keiser.MvxPlugins.Sockets\bin\Release\Keiser.MvxPlugins.Sockets.dll" target="lib\MonoAndroid17\Keiser.MvxPlugins.Sockets.dll" />
-		<file src="..\Keiser.MvxPlugins.Sockets.Touch\bin\Release\Keiser.MvxPlugins.Sockets.Touch.dll" target="lib\MonoAndroid17\Keiser.MvxPlugins.Sockets.Touch.dll" />
-		<file src="BootstrapContent\SocketsTouchPluginBootstrap.cs.pp" target="content\MonoTouch40\Bootstrap\SocketsTouchPluginBootstrap.cs.pp" />
+		<file src="..\Keiser.MvxPlugins.Sockets\bin\Release\Keiser.MvxPlugins.Sockets.dll" target="lib\MonoTouch\Keiser.MvxPlugins.Sockets.dll" />
+		<file src="..\Keiser.MvxPlugins.Sockets.Touch\bin\Release\Keiser.MvxPlugins.Sockets.Touch.dll" target="lib\MonoTouch\Keiser.MvxPlugins.Sockets.Touch.dll" />
+		<file src="BootstrapContent\SocketsTouchPluginBootstrap.cs.pp" target="content\MonoTouch\Bootstrap\SocketsPluginBootstrap.cs.pp" />
 	</files>
 </package>
