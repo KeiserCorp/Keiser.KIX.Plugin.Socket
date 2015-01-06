@@ -155,7 +155,8 @@ namespace Keiser.MvxPlugins.Sockets
             }
             catch (Exception e)
             {
-                Trace.Warn("Receiver Error {0}", e.ToString());
+                if (e.GetType() != typeof(System.ObjectDisposedException))
+                    Trace.Warn("Receiver Error: {0}", e.ToString());
             }
             if (messageLength > 0)
             {
