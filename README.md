@@ -1,5 +1,5 @@
-Mvx Sockets Plugin for MvvmCross
-========================
+# Mvx Sockets Plugin for MvvmCross
+:no_entry: [DEPRECATED] This repository is no longer maintained.
 
 ## Project
 MvvmCross plugin which adds Socket support to cross-platform projects.
@@ -11,13 +11,7 @@ Current Platform Support:
 ## Install & Use
 * NuGet: https://www.nuget.org/packages/Keiser.MvxPlugins.Sockets/
 
-## TODO
-* Add support for Windows Store and Windows Phone platforms
-* Modify implementation to match System.Net.Socket interfaces
-* Expand to full socket implementation (currently only UDP components)
+## Copyright and License
+Copyright 2014 [Keiser Corporation](http://keiser.com/).
 
-## Contributors
-* [bayssmekanique](https://github.com/bayssmekanique)
-
-## License
-Licensed under [The MIT License (MIT)](http://opensource.org/licenses/MIT)
+Licensed under the [MIT license](LICENSE.md).
